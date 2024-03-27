@@ -16,6 +16,14 @@ public class Aluno extends MembroEscola {
         this.notaFinal = notaFinal;
     }
 
+    // Sobrescrevendo mostrarDetalhes
+    @Override
+    public void mostrarDetalhes() {
+        super.mostrarDetalhes();
+        System.out.println("Nota final: " + notaFinal);
+
+    }
+
 }
 
 

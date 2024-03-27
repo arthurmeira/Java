@@ -5,9 +5,6 @@ public class Imprimir {
         Aluno aluno = new Aluno("Thiago", 19, 731, 7.5);
 
         aluno.mostrarDetalhes();
-        System.out.println("Nota final: " + aluno.getNotaFinal());
-
         professor.mostrarDetalhes();
-        System.out.println("Nota final: " + professor.getSalario());
     }
 }
