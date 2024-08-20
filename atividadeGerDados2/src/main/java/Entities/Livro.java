@@ -1,9 +1,6 @@
 package Entities;
 
-
-import java.util.ArrayList;
-
-public class Livro  {
+public class Livro {
     private String Titulo;
     private String Autor;
     private int Isbn;
@@ -16,8 +13,6 @@ public class Livro  {
         this.Isbn = Isbn;
         this.Genero = Genero;
         this.Preco = Preco;
-
-
     }
 
     public void Mostrar(){
@@ -70,28 +65,6 @@ public class Livro  {
         Preco = preco;
     }
 
-    public static class Livraria {
-        private ArrayList<Livro> livros;
 
-        public Livraria() {
-            this.livros = new ArrayList<>();
-        }
 
-        public void adicionar(Livro livro){
-            this.livros.add(livro);
-        }
-
-        public void listar(){
-            for (Livro livro : livros) {
-                livro.Mostrar();
-            }
-        }
-
-        public void pesquisar(Livro livro) {
-            for (livro.getGenero() == "1") {
-
-            }
-        }
-
-    }
 }

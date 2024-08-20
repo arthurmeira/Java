@@ -2,7 +2,7 @@ package Entities;
 
 import java.util.ArrayList;
 
-public class Livraria {
+public class Livraria  {
     private ArrayList<Livro> livros;
 
     public Livraria() {
@@ -18,4 +18,12 @@ public class Livraria {
             livro.Mostrar();
         }
     }
+
+     public void pesquisar(int isbn) {
+         for (Livro livro : livros) {
+             if (livro.getIsbn() == isbn) {
+                 return livro;
+             }
+         }
+     }
 }
